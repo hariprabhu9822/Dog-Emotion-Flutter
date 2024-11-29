@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final XFile? video = await _picker.pickVideo(source: ImageSource.camera);
     if (video != null) {
       setState(() {
-        _actionResult = "Video captured!";
+        _actionResult = "Video open!";
       });
       _uploadVideo(File(video.path));
     } else {
