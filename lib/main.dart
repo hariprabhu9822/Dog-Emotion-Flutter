@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     try {
       final uri = Uri.parse(
-          "http://192.168.122.24:5000/predict"); // Update to match your server's IP and port
+          "http://192.168.122.24:4000/predict"); // Update to match your server's IP and port
       final request = http.MultipartRequest('POST', uri);
       request.files
           .add(await http.MultipartFile.fromPath('videofile', videoFile.path));
